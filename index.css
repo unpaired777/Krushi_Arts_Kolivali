@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+}
+
+.hero {
+  background: url('ganesha-banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #4a148c; /* fallback */
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  margin-top: 1.5rem;
+  background-color: #ff9800;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about, .services, .contact {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.services ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.services li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #4a148c;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+/* Slideshow styling */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border-radius: 1rem;
+}
+
+.slide-img.active {
+  opacity: 1;
+}
